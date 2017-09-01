@@ -10,10 +10,16 @@ public class MoveCharacter : MonoBehaviour {
 
 	void Start () {
 		cc = GetComponent<CharacterController>();
-		MoveInput.KeyAction += Move;
+        PlayButton.Play += OnPlay;
 	}
-	
-	void Move (float _movement) {
+
+    void OnPlay()
+    {
+        MoveInput.KeyAction += Move;
+        PlayButton.Play -= OnPlay;
+    }
+
+    void Move (float _movement) {
 		tempMove.x = _movement*speed*Time.deltaTime;
 		cc.Move(tempMove);
 	}
