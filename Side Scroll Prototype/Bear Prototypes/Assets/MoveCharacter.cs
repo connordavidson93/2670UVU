@@ -11,6 +11,9 @@ public class MoveCharacter : MonoBehaviour {
     public float JumpHeight = 0.3f;
 	public float JumpCount = 2f;
 
+	public Transform player;
+	public Transform respawn;
+
     void Start () {
 		cc = GetComponent<CharacterController>();
 		MoveInput.KeyAction += Move;

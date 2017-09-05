@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class InteractionTrigger : MonoBehaviour {
-
-	public GameObject platform;
 
 	void OnTriggerEnter()
 	{
