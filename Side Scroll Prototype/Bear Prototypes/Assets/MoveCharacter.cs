@@ -7,10 +7,9 @@ public class MoveCharacter : MonoBehaviour {
 	CharacterController cc;
 	Vector3 tempMove;
 	public float speed = 5;
-
     public float gravity = 1;
-
     public float JumpHeight = 0.3f;
+	public float JumpCount = 2f;
 
     void Start () {
 		cc = GetComponent<CharacterController>();
@@ -19,7 +18,15 @@ public class MoveCharacter : MonoBehaviour {
 	}
 	
     void Jump () {
-        tempMove.y = JumpHeight;
+        
+
+		if(cc.isGrounded == true){
+			JumpCount = 2;
+		}
+		if(JumpCount != 0){
+			tempMove.y = JumpHeight;
+			JumpCount -= 1;
+		}
     }
 
 	void Move (float _movement) {
