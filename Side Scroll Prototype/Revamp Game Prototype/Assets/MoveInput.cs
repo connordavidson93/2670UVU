@@ -6,20 +6,30 @@ using System;
 public class MoveInput : MonoBehaviour {
 	
 	public static Action<float> KeyAction;
-
-	public static Action respawn;
-
+	public float runTime = 0.01f;
     public static Action JumpAction;
-	
-	void Update () {
+	public bool canPlay = true;
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
+	void Start()
+	{
+		StartCoroutine(RunInput());
+	}
+
+
+	IEnumerator RunInput () {
+		while (canPlay){
+			 if (Input.GetKeyDown(KeyCode.Space)) 
+			{
             JumpAction();
-        }
+        	}
 
 		if(KeyAction != null)
-		{
+			{
 			KeyAction(Input.GetAxis("Horizontal"));
+			}
+		yield return new WaitForSeconds(runTime);
 		}
+
+       
 	}
 }

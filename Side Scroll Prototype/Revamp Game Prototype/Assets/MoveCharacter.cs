@@ -7,17 +7,15 @@ public class MoveCharacter : MonoBehaviour {
 	CharacterController cc;
 	Vector3 tempMove;
 	public float speed = 5;
-    public float gravity = 1;
+    public float gravity = 1f;
     public float JumpHeight = 0.3f;
 	public float JumpCount = 2f;
-
-	public Transform player;
-	public Transform respawn;
 
     void Start () {
 		cc = GetComponent<CharacterController>();
 		MoveInput.KeyAction += Move;
         MoveInput.JumpAction = Jump;
+		VineClimb.ChangeGravityAction += ChangeGravity;
 	}
 	
     void Jump () {
@@ -34,7 +32,13 @@ public class MoveCharacter : MonoBehaviour {
 
 	void Move (float _movement) {
         tempMove.y -= gravity*Time.deltaTime;
+		//print (gravity);
 		tempMove.x = _movement*speed*Time.deltaTime;
 		cc.Move(tempMove);
+	}
+
+	void ChangeGravity(float newGrav){
+		gravity = newGrav;
+		print("Gravity Has Been Chamged");
 	}
 }
