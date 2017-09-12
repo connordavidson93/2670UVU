@@ -1,7 +1,8 @@
-﻿using UnityEngine;
-using System;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class DeactivateCommand : MonoBehaviour {
+public class DeactivateButton : MonoBehaviour {
 	public void OnTriggerEnter () {
 		ReleaseControl.DeactivateAction += Deactivate;
 		//currentGO = GetComponent<GameObject>();

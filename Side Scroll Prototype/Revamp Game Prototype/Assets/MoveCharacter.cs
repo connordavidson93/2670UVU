@@ -15,6 +15,7 @@ public class MoveCharacter : MonoBehaviour {
 		cc = GetComponent<CharacterController>();
 		MoveInput.KeyAction += Move;
         MoveInput.JumpAction = Jump;
+		MoveInput.CrouchAction += Crouch;
 		VineClimb.ChangeGravityAction += ChangeGravity;
 	}
 	
@@ -37,8 +38,19 @@ public class MoveCharacter : MonoBehaviour {
 		cc.Move(tempMove);
 	}
 
+	void Crouch(){
+		transform.localScale = new Vector3(1, .5f, 1);
+		MoveInput.CrouchAction -= Crouch;
+		MoveInput.CrouchAction += Standing;
+	}
+	void Standing(){
+		transform.localScale = new Vector3(1, 1, 1);
+		MoveInput.CrouchAction -= Standing;
+		MoveInput.CrouchAction += Crouch;
+	}
+
 	void ChangeGravity(float newGrav){
 		gravity = newGrav;
-		print("Gravity Has Been Chamged");
+		//print("Gravity Has Been Chamged");
 	}
 }
