@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: eb307ff6767af9942afa56cb4ddc23cc
 folderAsset: yes
 timeCreated: 1504130618
+=======
+guid: 90c9115207f7e8c4ca2d2449694b8768
+folderAsset: yes
+timeCreated: 1504130280
+>>>>>>> LearningAssets
 licenseType: Pro
 DefaultImporter:
   userData: 
