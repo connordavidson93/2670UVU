@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 6506762}
   - component: {fileID: 5406762}
   - component: {fileID: 114480744496039534}
+  - component: {fileID: 114767017650473004}
   m_Layer: 13
   m_Name: CharacterOffset
   m_TagString: Player
@@ -223,6 +224,7 @@ GameObject:
   - component: {fileID: 54873580501884450}
   - component: {fileID: 65141138149939998}
   - component: {fileID: 114414383000500488}
+  - component: {fileID: 114193293151444992}
   m_Layer: 16
   m_Name: AnimRoot
   m_TagString: Untagged
@@ -334,6 +336,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 450530}
+  - component: {fileID: 114407005781998866}
   m_Layer: 12
   m_Name: WeaponAttach
   m_TagString: Untagged
@@ -1434,6 +1437,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114193293151444992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37dac04605a0f464c8fc8ac2bc443465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114311528412477274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1445,6 +1459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e00dedf51a58074a9c7174e7cbc3c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runTime: 0.01
+  canPlay: 1
 --- !u!114 &114403356756110994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1459,6 +1475,17 @@ MonoBehaviour:
   speed: 20
   gravity: 5
   jumpHeight: 0.2
+--- !u!114 &114407005781998866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1867d6a316bb9004a8c58d0f235e9f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114414383000500488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1479,5 +1506,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1956194cd91f54e42b170290c8d3ae49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114767017650473004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -41,6 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 422920}
   - component: {fileID: 6522926}
+  - component: {fileID: 114249377317658282}
+  - component: {fileID: 114775175691996096}
   m_Layer: 28
   m_Name: PlasmaWeaponHolder
   m_TagString: PLASMA
@@ -118,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122918}
   m_LocalRotation: {x: 0.078459114, y: 0, z: 0, w: 0.99691737}
-  m_LocalPosition: {x: 0.41216087, y: 0, z: 0.1886077}
+  m_LocalPosition: {x: 6.89, y: 0.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 481610}
@@ -132,7 +134,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17, y: -25.09, z: 0}
+  m_LocalPosition: {x: 22.2, y: -25.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 422918}
@@ -194,7 +196,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0bc716c6cb7d45d4e95a4d7a26c6e0d0, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -226,7 +228,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0bc716c6cb7d45d4e95a4d7a26c6e0d0, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -282,7 +284,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 6.09, y: 3, z: 3}
-  m_Center: {x: -2.38, y: 0, z: 0.12}
+  m_Center: {x: 3.43, y: 0.53, z: 0.12}
 --- !u!108 &10868616
 Light:
   m_ObjectHideFlags: 1
@@ -362,9 +364,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1229136533
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 60
   m_Sprite: {fileID: 21300002, guid: 2591aeded66a2394dba77fe9632e2d35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -386,3 +388,29 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 122920}
   m_IsPrefabParent: 1
+--- !u!114 &114249377317658282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd290764f74345bba83fc4a85e62454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114775175691996096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1009235c8e06bd24fa6c96e72ad5ba2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoCount: 100
+  fireRate: 1
+  ammoPower: 0.1
+  canFire: 1

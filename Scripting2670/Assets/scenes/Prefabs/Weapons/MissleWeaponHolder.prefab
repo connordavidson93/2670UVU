@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4635286635543688}
   - component: {fileID: 65546530556382238}
   - component: {fileID: 114249672903388086}
+  - component: {fileID: 114416030941949204}
   m_Layer: 28
   m_Name: MissleWeaponHolder
   m_TagString: PLASMA
@@ -356,8 +357,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd290764f74345bba83fc4a85e62454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachObject: {fileID: 0}
-  assetArt: {fileID: 1306737676396072}
+--- !u!114 &114416030941949204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1283685359199464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1009235c8e06bd24fa6c96e72ad5ba2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoCount: 100
+  fireRate: 1
+  ammoPower: 0.1
+  canFire: 1
 --- !u!212 &212021815856026174
 SpriteRenderer:
   m_ObjectHideFlags: 1
