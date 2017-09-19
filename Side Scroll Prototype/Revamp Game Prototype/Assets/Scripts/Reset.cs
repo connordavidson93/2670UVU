@@ -4,7 +4,7 @@ public class Reset : MonoBehaviour {
 	public Transform startPoint;
 
 	void Start () {
-		EndGame.End += ResetThis;
+		EndGame.Respawn += ResetThis;
 	}
 	
 	void ResetThis () {
