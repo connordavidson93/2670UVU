@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,8 +18,14 @@ public class MoveCharacter : MonoBehaviour {
         MoveInput.JumpAction = Jump;
 		MoveInput.CrouchAction += Crouch;
 		VineClimb.ChangeGravityAction += ChangeGravity;
+		ChangeSpeed.SendSpeed = SendSpeedHandler;
 	}
-	
+
+    private void SendSpeedHandler(float _speed)
+    {
+        speed = _speed;
+    }
+
     void Jump () {
         
 
