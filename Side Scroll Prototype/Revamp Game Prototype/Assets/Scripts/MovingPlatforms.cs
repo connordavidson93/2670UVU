@@ -20,6 +20,7 @@ public class MovingPlatforms : MonoBehaviour {
 	
 	void FixedUpdate () {
 		MovingPlatform.position = Vector3.Lerp (MovingPlatform.position, NewPosition, Travel*Time.deltaTime);
+		print(Travel * Time.deltaTime);
 	}
 
 	void ChangePosition (){
