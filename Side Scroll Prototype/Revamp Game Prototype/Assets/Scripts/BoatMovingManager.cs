@@ -9,34 +9,41 @@ public class BoatMovingManager : MonoBehaviour {
 	public Vector3 NewPosition;
 	public string CurrentState;
 	public float Travel;
-	public float ResetTime;
+	public float ResetTime = 5f;
+
+	private bool destReached = false;
 
 	void Start()
 	{
-		print(CurrentState);
+		print(Position1.position.x + " Pos 1: " + Position2.position.x + " Pos 2:");
 		CurrentState = "Dont move";
 	}
 
 	void OnTriggerEnter () {
 		CurrentState = "Start Moving";
-		ChangeBoatPosition();
+		StartCoroutine (ChangeBoatPosition());
 		//print(CurrentState);
 	}
 	
 	void FixedUpdate () {
 		if(CurrentState != "Dont move"){MovingPlatform.position = Vector3.Lerp (MovingPlatform.position, NewPosition, Travel*Time.deltaTime);}
-		print(NewPosition.x + NewPosition.y + NewPosition.z);
+		if(MovingPlatform.transform.position == NewPosition){destReached = true;}
+		//print(NewPosition.x + NewPosition.y + NewPosition.z);
 	}
 
-	void ChangeBoatPosition (){
+	/*void ChangeBoatPosition (){
+		print(Time.time);
 		switch (CurrentState){
 			case "Moving to Position 1":
 				CurrentState = "Moving to Position 2";
 				NewPosition = Position2.position;
+				print (Position2.position.x + " should be " + NewPosition.x);
 			break;
 			case "Moving to Position 2":
 				CurrentState = "Moving to Position 1";
 				NewPosition = Position1.position;
+				print (Position1.position.x + " should be " + NewPosition.x);
+
 			break;
 			case "Start Moving":
 				CurrentState = "Moving to Position 1";
@@ -44,7 +51,33 @@ public class BoatMovingManager : MonoBehaviour {
 			default:
 			break;
 		}
-		print(CurrentState);
-		Invoke("ChangePosition", ResetTime);
+		Invoke("ChangeBoatPosition", ResetTime);
+	}*/
+
+	IEnumerator ChangeBoatPosition(){
+		switch (CurrentState){
+			case "Moving to Position 1":
+				CurrentState = "Moving to Position 2";
+				NewPosition = Position2.position;
+				print (Position2.position.x + " should be " + NewPosition.x);
+			break;
+			case "Moving to Position 2":
+				CurrentState = "Moving to Position 1";
+				NewPosition = Position1.position;
+				print (Position1.position.x + " should be " + NewPosition.x);
+
+			break;
+			case "Start Moving":
+				CurrentState = "Moving to Position 1";
+				NewPosition = Position2.position;
+			break;
+			default:
+			break;
+		}
+		yield return new WaitForSeconds(5f);
+		//yield return null;
+		StartCoroutine(ChangeBoatPosition());
 	}
 }
+
+

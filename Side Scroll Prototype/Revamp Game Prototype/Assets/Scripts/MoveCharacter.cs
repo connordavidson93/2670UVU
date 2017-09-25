@@ -50,12 +50,12 @@ public class MoveCharacter : MonoBehaviour {
 	}
 
 	void Crouch(){
-		transform.localScale = new Vector3(1, .5f, 1);
+		transform.localScale = new Vector3(2, .8f, 2);
 		MoveInput.CrouchAction -= Crouch;
 		MoveInput.CrouchAction += Standing;
 	}
 	void Standing(){
-		transform.localScale = new Vector3(1, 1, 1);
+		transform.localScale = new Vector3(2, 2, 2);
 		MoveInput.CrouchAction -= Standing;
 		MoveInput.CrouchAction += Crouch;
 	}
