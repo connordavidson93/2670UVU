@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Bear Game.unity
     guid: d2603361da1449442997920ffb727ad5
+  - enabled: 1
+    path: Assets/Swamp Level.unity
+    guid: 30e7862685ce85246977a5392890e2b5
