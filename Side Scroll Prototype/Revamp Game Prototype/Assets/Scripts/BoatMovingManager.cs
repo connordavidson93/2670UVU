@@ -9,7 +9,7 @@ public class BoatMovingManager : MonoBehaviour {
 	public Vector3 NewPosition;
 	public string CurrentState;
 	public float Travel;
-	public float ResetTime = 5f;
+	public float ResetTime = 10f;
 
 	private bool destReached = false;
 
@@ -74,7 +74,7 @@ public class BoatMovingManager : MonoBehaviour {
 			default:
 			break;
 		}
-		yield return new WaitForSeconds(5f);
+		yield return new WaitForSeconds(8f);
 		//yield return null;
 		StartCoroutine(ChangeBoatPosition());
 	}
