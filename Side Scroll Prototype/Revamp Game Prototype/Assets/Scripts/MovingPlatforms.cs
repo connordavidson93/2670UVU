@@ -15,14 +15,14 @@ public class MovingPlatforms : MonoBehaviour {
 
 
 	void Start () {
-		ChangePosition();
+		ChangeDoorPosition();
 	}
 	
 	void FixedUpdate () {
 		MovingPlatform.position = Vector3.Lerp (MovingPlatform.position, NewPosition, Travel*Time.deltaTime);
 	}
 
-	void ChangePosition (){
+	/*void ChangePosition (){
 		if(CurrentState == "Moving to Position 1"){
 			CurrentState = "Moving to Position 2";
 			NewPosition = Position2.position;
@@ -36,5 +36,28 @@ public class MovingPlatforms : MonoBehaviour {
 			NewPosition = Position2.position;
 		}
 		Invoke("ChangePosition", ResetTime);
+	}*/
+	IEnumerator ChangeDoorPosition(){
+		switch (CurrentState){
+			case "Moving to Position 1":
+				CurrentState = "Moving to Position 2";
+				NewPosition = Position2.position;
+				print (Position2.position.x + " should be " + NewPosition.x);
+			break;
+			case "Moving to Position 2":
+				CurrentState = "Moving to Position 1";
+				NewPosition = Position1.position;
+				print (Position1.position.x + " should be " + NewPosition.x);
+
+			break;
+			case "":
+				CurrentState = "Moving to Position 1";
+				NewPosition = Position2.position;
+			break;
+			default:
+			break;
+			yield return new WaitForSeconds(8f);
+			StartCoroutine(ChangeDoorPosition());
+		}
 	}
 }
