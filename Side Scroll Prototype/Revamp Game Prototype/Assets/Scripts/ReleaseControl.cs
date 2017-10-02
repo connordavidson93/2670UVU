@@ -2,10 +2,12 @@
 using System;
 
 public class ReleaseControl : MonoBehaviour {
-	public static Action DeactivateAction;
+	public static Action<bool> DeactivateAction;
+	public GameObject triggerArea;
+	public bool shouldActivate = true;  //if false this will deactivate subed obj if true it will activate the object
 	void OnTriggerEnter()
 	{
-		DeactivateAction();
+		triggerArea.SetActive(false);
 	}
 
 }

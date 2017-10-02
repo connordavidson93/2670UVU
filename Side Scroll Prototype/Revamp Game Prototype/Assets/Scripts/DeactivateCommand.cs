@@ -7,7 +7,7 @@ public class DeactivateCommand : MonoBehaviour {
 		//currentGO = GetComponent<GameObject>();
 	}
 	
-	void Deactivate () {
-		gameObject.SetActive(false);
+	void Deactivate (bool _act) {
+		gameObject.SetActive(_act);
 	}
 }

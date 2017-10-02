@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using UnityEngine;
 
 public class MovingPlatforms : MonoBehaviour {
 	public Transform MovingPlatform;
@@ -9,20 +6,16 @@ public class MovingPlatforms : MonoBehaviour {
 	public Transform Position2;
 	public Vector3 NewPosition;
 	public string CurrentState;
-	public float Travel;
+	public float Travel = 5;
 	public float ResetTime;
-
-
 
 	void Start () {
 		ChangeDoorPosition();
 	}
-	
 	void FixedUpdate () {
 		MovingPlatform.position = Vector3.Lerp (MovingPlatform.position, NewPosition, Travel*Time.deltaTime);
 	}
-
-	/*void ChangePosition (){
+	void ChangeDoorPosition (){
 		if(CurrentState == "Moving to Position 1"){
 			CurrentState = "Moving to Position 2";
 			NewPosition = Position2.position;
@@ -35,9 +28,9 @@ public class MovingPlatforms : MonoBehaviour {
 			CurrentState = "Moving to Position 2";
 			NewPosition = Position2.position;
 		}
-		Invoke("ChangePosition", ResetTime);
-	}*/
-	IEnumerator ChangeDoorPosition(){
+		Invoke("ChangeDoorPosition", ResetTime);
+	}
+	/*IEnumerator ChangeDoorPosition(){
 		switch (CurrentState){
 			case "Moving to Position 1":
 				CurrentState = "Moving to Position 2";
@@ -50,14 +43,11 @@ public class MovingPlatforms : MonoBehaviour {
 				print (Position1.position.x + " should be " + NewPosition.x);
 
 			break;
-			case "":
+			default:
 				CurrentState = "Moving to Position 1";
 				NewPosition = Position2.position;
 			break;
-			default:
-			break;
 			yield return new WaitForSeconds(8f);
 			StartCoroutine(ChangeDoorPosition());
-		}
-	}
+		}*/
 }
