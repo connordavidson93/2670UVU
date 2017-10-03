@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class StatueManager : MonoBehaviour {
+	public int AltarID;
 
-	// Use this for initialization
-	void Start () {
-		
+	public static Action <bool, int> StatuePlace;
+	void OnTriggerEnter(Collider other)
+	{
+		StatuePlace(true, AltarID);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void OnTriggerExit(Collider other)
+	{
+		StatuePlace(false, AltarID);
 	}
+
 }

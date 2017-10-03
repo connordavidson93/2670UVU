@@ -11,9 +11,4 @@ public class EnemyMove : MonoBehaviour {
 	{
 		agent.destination = player.position;
 	}
-	
-	void OnTriggerExit(Collider other)
-	{
-		agent.destination = agent.destination;
-	}
 }
