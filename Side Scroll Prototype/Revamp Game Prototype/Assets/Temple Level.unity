@@ -4692,6 +4692,7 @@ GameObject:
   - component: {fileID: 691032308}
   - component: {fileID: 691032307}
   - component: {fileID: 691032311}
+  - component: {fileID: 691032313}
   - component: {fileID: 691032312}
   m_Layer: 10
   m_Name: Spider
@@ -4808,6 +4809,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &691032313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 691032306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ad655f9a1333e48a41f4e4ad5dcd75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 691032311}
+  player: {fileID: 1692942749}
 --- !u!1 &735574308
 GameObject:
   m_ObjectHideFlags: 0
@@ -8585,6 +8599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfd8e12f3f989c43b288d66237a41ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Respawn: {fileID: 0}
 --- !u!23 &1440714415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10121,7 +10136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211d6130df7fcab49b2440c17aab4e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: {fileID: 1749033857}
 --- !u!114 &1692942751
 MonoBehaviour:
   m_ObjectHideFlags: 0

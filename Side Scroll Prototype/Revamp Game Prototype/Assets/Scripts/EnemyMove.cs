@@ -7,8 +7,18 @@ public class EnemyMove : MonoBehaviour {
 	public NavMeshAgent agent;
 	public Transform player;
 
-	void OnTriggerEnter(Collider other)
-	{
-		agent.destination = player.position;
+	//private int framecount;
+
+	void Start(){
+		//agent= GetComponent<NavMeshAgent>();
 	}
+
+	void FixedUpdate()
+	{
+		//framecount++;
+		//print(agent.isOnNavMesh + " / " + framecount);
+		agent.destination = player.position;
+		//print(player.position.x);
+	}
+	
 }
