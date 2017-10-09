@@ -2,9 +2,9 @@
 using System;
 
 public class EndGame : MonoBehaviour {
-	public static Action Respawn;
+	public Transform Respawn;
 	void OnTriggerEnter(Collider other)
 	{
-		Respawn();
+		other.transform.position = Respawn.position;
 	}
 }
