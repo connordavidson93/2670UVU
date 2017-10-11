@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Swamp Level.unity
     guid: 30e7862685ce85246977a5392890e2b5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Temple Level.unity
     guid: be2967dcee4197e47a57d42d2d51dd87
+  - enabled: 1
+    path: Assets/FullBearGame.unity
+    guid: fafda6650778429458a7433911f0a2be
