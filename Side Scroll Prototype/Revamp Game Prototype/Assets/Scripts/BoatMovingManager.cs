@@ -15,7 +15,7 @@ public class BoatMovingManager : MonoBehaviour {
 
 	void Start()
 	{
-		print(Position1.position.x + " Pos 1: " + Position2.position.x + " Pos 2:");
+		//print(Position1.position.x + " Pos 1: " + Position2.position.x + " Pos 2:");
 		CurrentState = "Dont move";
 	}
 

@@ -15,7 +15,7 @@ public class FallingLogs : MonoBehaviour {
 	void Update()
 	{
 		if (isFalling){
-			downSpeed += Time.deltaTime/10;
+			downSpeed += Time.deltaTime/15;
 			Rb.transform.position = new Vector3(Rb.transform.position.x, Rb.transform.position.y - downSpeed, Rb.transform.position.z);
 		}
 	}
