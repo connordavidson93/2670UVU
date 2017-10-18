@@ -28,7 +28,7 @@ public class BoatMovingManager : MonoBehaviour {
 	void FixedUpdate () {
 		if(CurrentState != "Dont move"){MovingPlatform.position = Vector3.Lerp (MovingPlatform.position, NewPosition, Travel*Time.deltaTime);}
 		if(MovingPlatform.transform.position == NewPosition){destReached = true;}
-		//print(NewPosition.x + NewPosition.y + NewPosition.z);
+		print(NewPosition.x + NewPosition.y + NewPosition.z);
 	}
 
 	/*void ChangeBoatPosition (){
