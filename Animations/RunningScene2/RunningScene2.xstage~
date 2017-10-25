@@ -223,29 +223,6 @@
     <dwg name="12" scaleFactor="1"/>
     <dwg name="13" scaleFactor="1"/>
     <dwg name="14" scaleFactor="1"/>
-    <dwg name="15" scaleFactor="1"/>
-    <dwg name="16" scaleFactor="1"/>
-    <dwg name="17" scaleFactor="1"/>
-    <dwg name="18" scaleFactor="1"/>
-    <dwg name="19" scaleFactor="1"/>
-    <dwg name="20" scaleFactor="1"/>
-    <dwg name="21" scaleFactor="1"/>
-    <dwg name="22" scaleFactor="1"/>
-    <dwg name="23" scaleFactor="1"/>
-    <dwg name="24" scaleFactor="1"/>
-    <dwg name="25" scaleFactor="1"/>
-    <dwg name="26" scaleFactor="1"/>
-    <dwg name="27" scaleFactor="1"/>
-    <dwg name="28" scaleFactor="1"/>
-    <dwg name="29" scaleFactor="1"/>
-    <dwg name="30" scaleFactor="1"/>
-    <dwg name="31" scaleFactor="1"/>
-    <dwg name="32" scaleFactor="1"/>
-    <dwg name="33" scaleFactor="1"/>
-    <dwg name="34" scaleFactor="1"/>
-    <dwg name="35" scaleFactor="1"/>
-    <dwg name="36" scaleFactor="1"/>
-    <dwg name="37" scaleFactor="1"/>
    </drawings>
   </element>
  </elements>
@@ -264,7 +241,7 @@
  <scenes>
   <scene name="Top" id="08cf49a9c9d0080d" nbframes="37">
    <columns>
-    <column type="0" name="Drawing" display="false" displayOrder="2" width="100" anonymous="true" id="1">
+    <column type="0" name="Drawing" displayOrder="2" width="100" anonymous="true" id="1">
      <elementSeq exposures="1-4" val="79" id="1"/>
      <elementSeq exposures="5-7" val="78" id="1"/>
      <elementSeq exposures="8-10" val="77" id="1"/>
@@ -470,10 +447,6 @@
      <elementSeq exposures="35-37" val="12" id="8"/>
     </column>
     <column type="0" name="Drawing_4" displayOrder="1" width="100" anonymous="true" id="51">
-     <elementSeq exposures="1" val="34" id="51"/>
-     <elementSeq exposures="2" val="37" id="51"/>
-     <elementSeq exposures="3" val="36" id="51"/>
-     <elementSeq exposures="4" val="35" id="51"/>
      <elementSeq exposures="5" val="1" id="51"/>
      <elementSeq exposures="6" val="7" id="51"/>
      <elementSeq exposures="7" val="6" id="51"/>
@@ -487,26 +460,7 @@
      <elementSeq exposures="15" val="12" id="51"/>
      <elementSeq exposures="16" val="13" id="51"/>
      <elementSeq exposures="17" val="11" id="51"/>
-     <elementSeq exposures="18" val="16" id="51"/>
-     <elementSeq exposures="19" val="15" id="51"/>
      <elementSeq exposures="20" val="14" id="51"/>
-     <elementSeq exposures="21" val="17" id="51"/>
-     <elementSeq exposures="22" val="18" id="51"/>
-     <elementSeq exposures="23" val="20" id="51"/>
-     <elementSeq exposures="24" val="19" id="51"/>
-     <elementSeq exposures="25" val="23" id="51"/>
-     <elementSeq exposures="26" val="22" id="51"/>
-     <elementSeq exposures="27" val="21" id="51"/>
-     <elementSeq exposures="28" val="24" id="51"/>
-     <elementSeq exposures="29" val="26" id="51"/>
-     <elementSeq exposures="30" val="25" id="51"/>
-     <elementSeq exposures="31" val="29" id="51"/>
-     <elementSeq exposures="32" val="28" id="51"/>
-     <elementSeq exposures="33" val="27" id="51"/>
-     <elementSeq exposures="34" val="32" id="51"/>
-     <elementSeq exposures="35" val="31" id="51"/>
-     <elementSeq exposures="36" val="30" id="51"/>
-     <elementSeq exposures="37" val="33" id="51"/>
     </column>
    </columns>
    <options>
@@ -674,7 +628,6 @@
      </module>
      <module type="READ" name="Drawing" pos="-65,-50,0" publishUnderTab="Drawing">
       <options>
-       <disabled val="true"/>
        <version val="1"/>
        <collapsed val="false"/>
       </options>
