@@ -10,4 +10,10 @@ public class DeactivateCommand : MonoBehaviour {
 	void Deactivate (bool _act) {
 		gameObject.SetActive(_act);
 	}
+		void OnDisable(){
+		UnsubAllActions();
+	}
+	void UnsubAllActions() {
+		ReleaseControl.DeactivateAction -= Deactivate;
+	}
 }

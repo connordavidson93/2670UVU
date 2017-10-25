@@ -15,7 +15,7 @@ public class FallingLogs : MonoBehaviour {
 	void Update()
 	{
 		if (isFalling){
-			downSpeed += Time.deltaTime/15;
+			downSpeed += Time.deltaTime/3;
 			Rb.transform.position = new Vector3(Rb.transform.position.x, Rb.transform.position.y - downSpeed, Rb.transform.position.z);
 		}
 	}
@@ -27,6 +27,7 @@ public class FallingLogs : MonoBehaviour {
 		isFalling = true;
 		yield return new WaitForSeconds(resetPosition);
 		isFalling = false;
+		downSpeed = 0;
 		Rb.transform.position = initialPosition;
 	}
 }

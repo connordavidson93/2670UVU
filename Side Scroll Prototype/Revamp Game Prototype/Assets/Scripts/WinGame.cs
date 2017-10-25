@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WinGame : MonoBehaviour {
 	public float restartDelay = 1f;
+	public Transform WinScreen;
 	void OnTriggerEnter(Collider other)
 	{
 		print ("Welcome home!");
@@ -12,6 +13,6 @@ public class WinGame : MonoBehaviour {
 	}
 
 	public void RestartGame(){
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		WinScreen.gameObject.SetActive(true);
 	} 
 }

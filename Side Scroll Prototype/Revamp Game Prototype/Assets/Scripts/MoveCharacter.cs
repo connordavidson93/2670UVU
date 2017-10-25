@@ -21,6 +21,17 @@ public class MoveCharacter : MonoBehaviour {
 		ChangeSpeed.SendSpeed = SendSpeedHandler;
 	}
 
+	void OnDisable(){
+		UnsubAllActions();
+	}
+	void UnsubAllActions() {
+		MoveInput.KeyAction -= Move;
+        MoveInput.JumpAction -= Jump;
+		MoveInput.CrouchAction -= Crouch;
+		VineClimb.ChangeGravityAction -= ChangeGravity;
+		ChangeSpeed.SendSpeed -= SendSpeedHandler;
+	}
+
     private void SendSpeedHandler(float _speed)
     {
         speed = _speed;

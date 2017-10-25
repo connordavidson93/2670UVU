@@ -34,7 +34,11 @@ public class MoveInput : MonoBehaviour {
 			}
 		yield return new WaitForSeconds(runTime);
 		}
-
+		/*void DisableActions(){
+			KeyAction = null;
+			CrouchAction = null;
+		}*/
        
 	}
+
 }

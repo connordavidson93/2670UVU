@@ -19,6 +19,11 @@ public class FlipCharacter : MonoBehaviour {
 		myRotate.eulerAngles = rotValue;
 		transform.rotation = myRotate;
 	}
-	
+	void OnDisable(){
+		UnsubAllActions();
+	}
+	void UnsubAllActions() {
+		MoveInput.KeyAction -= Flip;
+	}
 
 }

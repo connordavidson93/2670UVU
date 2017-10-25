@@ -17,6 +17,15 @@ public class PauseGame : MonoBehaviour {
 			canvas.gameObject.SetActive(false);
 			Time.timeScale = 1;
 		}
-
+	}
+	public void Resume(bool clicked){
+		if(clicked == true){
+			canvas.gameObject.SetActive(false);
+			Time.timeScale = 1;
+		}
+	}
+	public void OnDisable()
+	{
+		Time.timeScale = 1;
 	}
 }

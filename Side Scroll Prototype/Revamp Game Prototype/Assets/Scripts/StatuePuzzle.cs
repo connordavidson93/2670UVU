@@ -21,4 +21,11 @@ public class StatuePuzzle : MonoBehaviour {
 			doorOpen.SetActive(false);
 		}
 	}
+	void OnDisable(){
+		UnsubAllActions();
+	}
+	void UnsubAllActions() {
+		StatueManager.StatuePlace -= OnStatuePlaced;
+
+	}
 }
