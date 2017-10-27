@@ -6,10 +6,13 @@ using System;
 [System.Serializable]
 public class GameData {
 	public float health = 1;
+    public float speed;
+    public Vector3 checkPoint;
+    public List<PowerUp> powerUps;
 	GameData(){
 
 	}
-	const string dataName = "GameData";
+	public const string dataName = "GameData";
 	private static GameData instance;
 	public static GameData Instance {
 		get { 
@@ -31,4 +34,8 @@ public class GameData {
 	public static void SetData(){
 		PlayerPrefs.SetString(dataName, JsonUtility.ToJson(instance));
 	}
+    public void SaveDataFromInstance()
+    {
+        PlayerPrefs.SetString(dataName, JsonUtility.ToJson(this));
+    }
 }
