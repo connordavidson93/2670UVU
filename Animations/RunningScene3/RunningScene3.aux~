@@ -270,5 +270,9 @@
   <Drawing Key="" Name="32" Version="1"/>
   <Drawing Key="" Name="33" Version="1"/>
   <Drawing Key="" Name="34" Version="1"/>
+  <Drawing Key="" Name="35" Version="1"/>
+ </Element>
+ <Element Name="Drawing_6" ID="53" Folder="Drawing_6">
+  <Drawing Key="" Name="1" Version="1"/>
  </Element>
 </SceneVersion>
