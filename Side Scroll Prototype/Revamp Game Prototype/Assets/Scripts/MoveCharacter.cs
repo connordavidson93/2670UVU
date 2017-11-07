@@ -17,7 +17,6 @@ public class MoveCharacter : MonoBehaviour {
 		MoveInput.KeyAction += Move;
         MoveInput.JumpAction = Jump;
 		MoveInput.CrouchAction += Crouch;
-		VineClimb.ChangeGravityAction += ChangeGravity;
 		ChangeSpeed.SendSpeed = SendSpeedHandler;
 	}
 
@@ -28,7 +27,6 @@ public class MoveCharacter : MonoBehaviour {
 		MoveInput.KeyAction -= Move;
         MoveInput.JumpAction -= Jump;
 		MoveInput.CrouchAction -= Crouch;
-		VineClimb.ChangeGravityAction -= ChangeGravity;
 		ChangeSpeed.SendSpeed -= SendSpeedHandler;
 	}
 
