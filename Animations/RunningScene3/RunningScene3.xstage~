@@ -434,7 +434,7 @@
      <elementSeq exposures="33-35" val="75" id="1"/>
      <elementSeq exposures="36" val="76" id="1"/>
     </column>
-    <column type="0" name="ATV-08CF49A9C9D022F0" display="false" displayOrder="10" width="100" anonymous="true" id="5">
+    <column type="0" name="ATV-08CF49A9C9D022F0" displayOrder="10" width="100" anonymous="true" id="5">
      <elementSeq exposures="1" val="21" id="5"/>
      <elementSeq exposures="2" val="22" id="5"/>
      <elementSeq exposures="3" val="23" id="5"/>
