@@ -473,7 +473,7 @@
      <elementSeq exposures="33-35" val="75" id="1"/>
      <elementSeq exposures="36" val="76" id="1"/>
     </column>
-    <column type="0" name="ATV-08CF49A9C9D022F0" display="false" displayOrder="11" width="100" anonymous="true" id="5">
+    <column type="0" name="ATV-08CF49A9C9D022F0" displayOrder="11" width="100" anonymous="true" id="5">
      <elementSeq exposures="1" val="21" id="5"/>
      <elementSeq exposures="2" val="22" id="5"/>
      <elementSeq exposures="3" val="23" id="5"/>
@@ -860,7 +860,7 @@
      <elementSeq exposures="36" val="27" id="55"/>
      <elementSeq exposures="37" val="28" id="55"/>
     </column>
-    <column type="0" name="Drawing_9" display="false" displayOrder="3" width="100" anonymous="true" id="56">
+    <column type="0" name="Drawing_9" displayOrder="3" width="100" anonymous="true" id="56">
      <elementSeq exposures="2" val="37" id="56"/>
      <elementSeq exposures="3" val="36" id="56"/>
      <elementSeq exposures="4" val="35" id="56"/>
