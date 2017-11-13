@@ -21,6 +21,7 @@ public class FallingLogs : MonoBehaviour {
 	}
 		
 	void OnTriggerEnter(){
+		print("EnteredTrigger");
 		StartCoroutine(FallingPlatform());
 	}
 	IEnumerator FallingPlatform(){

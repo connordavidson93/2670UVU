@@ -28,7 +28,7 @@ public class BoatMovingManager : MonoBehaviour {
 	void FixedUpdate () {
 		if(CurrentState != "Dont move"){MovingPlatform.position = Vector3.Lerp (MovingPlatform.position, NewPosition, Travel*Time.deltaTime);}
 		if(MovingPlatform.transform.position == NewPosition){destReached = true;}
-		print(NewPosition.x + NewPosition.y + NewPosition.z);
+		//print(NewPosition.x + NewPosition.y + NewPosition.z);
 	}
 
 	/*void ChangeBoatPosition (){
@@ -59,12 +59,12 @@ public class BoatMovingManager : MonoBehaviour {
 			case "Moving to Position 1":
 				CurrentState = "Moving to Position 2";
 				NewPosition = Position2.position;
-				print (Position2.position.x + " should be " + NewPosition.x);
+				//print (Position2.position.x + " should be " + NewPosition.x);
 			break;
 			case "Moving to Position 2":
 				CurrentState = "Moving to Position 1";
 				NewPosition = Position1.position;
-				print (Position1.position.x + " should be " + NewPosition.x);
+				//print (Position1.position.x + " should be " + NewPosition.x);
 
 			break;
 			case "Start Moving":
