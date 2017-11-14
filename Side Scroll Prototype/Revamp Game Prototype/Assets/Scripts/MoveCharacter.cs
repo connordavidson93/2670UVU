@@ -6,13 +6,14 @@ using UnityEngine;
 public class MoveCharacter : MonoBehaviour {
 
 	CharacterController cc;
-	Vector3 tempMove;
+	public static Vector3 tempMove;
 	public float speed = 5;
     public float gravity = 1f;
     public float JumpHeight = 0.3f;
 	public float JumpCount = 2f;
+	public static bool isGrounded = true;
 
-    void Start () {
+    public void Start () {
 		cc = GetComponent<CharacterController>();
 		MoveInput.KeyAction += Move;
         MoveInput.JumpAction = Jump;
@@ -35,7 +36,7 @@ public class MoveCharacter : MonoBehaviour {
         speed = _speed;
     }
 
-    void Jump () {
+    public void Jump () {
         
 
 		if(cc.isGrounded == true){
@@ -47,7 +48,7 @@ public class MoveCharacter : MonoBehaviour {
 		}
     }
 
-	void Move (float _movement) {
+	public void Move (float _movement) {
 		if(cc.isGrounded == true){
 			gravity = 0;
 		} else{
@@ -58,19 +59,14 @@ public class MoveCharacter : MonoBehaviour {
 		cc.Move(tempMove);
 	}
 
-	void Crouch(){
+	public void Crouch(){
 		transform.localScale = new Vector3(2, .8f, 2);
 		MoveInput.CrouchAction -= Crouch;
 		MoveInput.CrouchAction += Standing;
 	}
-	void Standing(){
+	public void Standing(){
 		transform.localScale = new Vector3(2, 2, 2);
 		MoveInput.CrouchAction -= Standing;
 		MoveInput.CrouchAction += Crouch;
-	}
-
-	void ChangeGravity(float newGrav){
-		gravity = newGrav;
-		//print("Gravity Has Been Chamged");
 	}
 }

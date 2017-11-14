@@ -4,8 +4,6 @@ public class FlipCharacter : MonoBehaviour {
 
 	Quaternion myRotate;
 	Vector3 rotValue;
-
-	// Use this for initialization
 	void Start () {
 		MoveInput.KeyAction += Flip;
 	}
