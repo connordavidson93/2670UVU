@@ -12,6 +12,7 @@ public class PlayerAnim : MonoBehaviour {
 		MoveInput.KeyAction += Animate;
 	}
 	private void Animate (float obj) {
+		MoveFloatY = MoveCharacter.tempMove.y;
 		if(MoveFloatY < -1)
 			MoveFloatY = -1;
 		MoveFloatX = Mathf.Abs(MoveCharacter.tempMove.x*7);
