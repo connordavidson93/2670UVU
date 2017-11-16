@@ -7,4 +7,5 @@
  <element id="58" elementName="Drawing" elementFolder="Drawing.58" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
  <element id="59" elementName="Drawing_3" elementFolder="Drawing_3.59" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
  <element id="60" elementName="Drawing_5" elementFolder="Drawing_5.60" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
+ <element id="61" elementName="BearRefSketch" elementFolder="BearRefSketch" pixmapFormat="10" scanType="2" fieldChart="12" vectorType="0" rootFolder="elements"/>
 </elements>
