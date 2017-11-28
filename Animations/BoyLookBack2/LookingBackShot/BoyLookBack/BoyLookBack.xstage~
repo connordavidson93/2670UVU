@@ -447,7 +447,7 @@
  <scenes>
   <scene name="Top" id="08d8c3be064007d4" nbframes="59">
    <columns>
-    <column type="0" name="ATV-08D8C3BE06425900" display="false" displayOrder="9" width="100" anonymous="true" id="4">
+    <column type="0" name="ATV-08D8C3BE06425900" displayOrder="9" width="100" anonymous="true" id="4">
      <elementSeq exposures="1-12" val="1" id="4"/>
      <elementSeq exposures="13-17" val="2" id="4"/>
      <elementSeq exposures="18-35" val="3" id="4"/>
@@ -507,7 +507,7 @@
     <column type="0" name="Tree" displayOrder="8" width="100" anonymous="true" id="5">
      <elementSeq exposures="1-59" val="1" id="5"/>
     </column>
-    <column type="0" name="LeftArm" display="false" displayOrder="7" width="100" anonymous="true" id="6">
+    <column type="0" name="LeftArm" displayOrder="7" width="100" anonymous="true" id="6">
      <elementSeq exposures="1" val="4" id="6"/>
      <elementSeq exposures="2" val="5" id="6"/>
      <elementSeq exposures="3" val="6" id="6"/>
