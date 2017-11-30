@@ -952,8 +952,7 @@
      <elementSeq exposures="43" val="35" id="12"/>
      <elementSeq exposures="44" val="36" id="12"/>
      <elementSeq exposures="45" val="37" id="12"/>
-     <elementSeq exposures="46" val="38" id="12"/>
-     <elementSeq exposures="47" val="39" id="12"/>
+     <elementSeq exposures="46-47" val="38" id="12"/>
      <elementSeq exposures="48" val="40" id="12"/>
      <elementSeq exposures="49" val="41" id="12"/>
      <elementSeq exposures="50-51" val="42" id="12"/>
