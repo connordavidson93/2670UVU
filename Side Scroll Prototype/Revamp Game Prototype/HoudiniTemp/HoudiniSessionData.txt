@@ -1,4 +1,4 @@
-CurrentProcessId = 1648
-ServerProcessID = 232
-ServerSessionID = 1115210128
+CurrentProcessId = 504
+ServerProcessID = 10096
+ServerSessionID = 389399200
 HoudiniSceneExists = true
