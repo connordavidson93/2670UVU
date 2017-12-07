@@ -57,6 +57,9 @@ public class MoveCharacter : MonoBehaviour {
         tempMove.y -= gravity*Time.deltaTime;
 		tempMove.x = _movement*speed*Time.deltaTime;
 		cc.Move(tempMove);
+		if(transform.position.z != 115){
+			transform.position = new Vector3(transform.position.x, transform.position.y, 115);
+		}
 	}
 
 	public void Crouch(){

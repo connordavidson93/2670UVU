@@ -9,6 +9,7 @@ public class GrabIdol : MonoBehaviour {
 
 	void OnTriggerEnter()
 	{
+		idol.position = player.position;
 		idol.transform.SetParent(player); 
 	}
 }
