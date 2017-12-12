@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System;
+using UnityEngine.Events;
 
 public class EndGame : MonoBehaviour {
 	public Transform Respawn;
@@ -16,5 +16,5 @@ public class EndGame : MonoBehaviour {
 		}
 		
 	}
-	public static Action ResetItems;
+	public static UnityAction ResetItems;
 }

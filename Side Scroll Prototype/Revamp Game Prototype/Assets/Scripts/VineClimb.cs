@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
+using UnityEngine.Events;
 
 public class VineClimb : MonoBehaviour {
 
-	public static Action <float> ChangeGravityAction;
+	public static UnityAction <float> ChangeGravityAction;
 	void OnTriggerEnter()
 	{
 		if (ChangeGravityAction != null)

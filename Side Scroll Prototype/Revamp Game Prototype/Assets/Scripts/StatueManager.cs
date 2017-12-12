@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
+using UnityEngine.Events;
 
 public class StatueManager : MonoBehaviour {
 	public int AltarID;
 
-	public static Action <bool, int> StatuePlace;
+	public static UnityAction <bool, int> StatuePlace;
 	void OnTriggerEnter(Collider other)
 	{
 		StatuePlace(true, AltarID);
