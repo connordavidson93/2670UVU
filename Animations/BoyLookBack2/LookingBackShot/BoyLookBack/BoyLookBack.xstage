@@ -1054,7 +1054,7 @@
      <elementSeq exposures="58" val="58" id="13"/>
      <elementSeq exposures="59" val="59" id="13"/>
     </column>
-    <column type="0" name="Drawing_7" displayOrder="10" width="100" anonymous="true" id="14">
+    <column type="0" name="Drawing_7" display="false" displayOrder="10" width="100" anonymous="true" id="14">
      <elementSeq exposures="2" val="2" id="14"/>
      <elementSeq exposures="3" val="3" id="14"/>
      <elementSeq exposures="4" val="4" id="14"/>
@@ -1250,6 +1250,7 @@
      </module>
      <module type="READ" name="Drawing_7" pos="0,0,0" publishUnderTab="Drawing_7">
       <options>
+       <disabled val="true"/>
        <version val="1"/>
        <collapsed val="false"/>
       </options>
